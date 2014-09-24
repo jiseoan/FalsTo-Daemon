@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\htdocs\hologram\cli\appaliveregister.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\appupdatequery.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\commtest.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\configure.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\configurequery.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\dataupdatequery.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\logregister.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\pcrebootingquery.php" />
+    <None Include="..\..\..\..\htdocs\hologram\cli\pcshutdowntimequery.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\backup.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\db.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\env.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\file.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\list.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\manlang.php" />
+    <None Include="..\..\..\..\htdocs\hologram\common\wol.php" />
+    <None Include="..\..\..\..\htdocs\hologram\copyright.php" />
+    <None Include="..\..\..\..\htdocs\hologram\css\mainpage.css" />
+    <None Include="..\..\..\..\htdocs\hologram\css\subpage.css" />
+    <None Include="..\..\..\..\htdocs\hologram\index.php" />
+    <None Include="..\..\..\..\htdocs\hologram\js\menu.js" />
+    <None Include="..\..\..\..\htdocs\hologram\js\selectsync.js" />
+    <None Include="..\..\..\..\htdocs\hologram\js\update.js" />
+    <None Include="..\..\..\..\htdocs\hologram\login.php" />
+    <None Include="..\..\..\..\htdocs\hologram\mainman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\mainmanadm.php" />
+    <None Include="..\..\..\..\htdocs\hologram\mainmansch.php" />
+    <None Include="..\..\..\..\htdocs\hologram\mainmansvc.php" />
+    <None Include="..\..\..\..\htdocs\hologram\maintenance\backup.php" />
+    <None Include="..\..\..\..\htdocs\hologram\maintenance\poweronall.php" />
+    <None Include="..\..\..\..\htdocs\hologram\menu.php" />
+    <None Include="..\..\..\..\htdocs\hologram\pages.php" />
+    <None Include="..\..\..\..\htdocs\hologram\preview\configure.php" />
+    <None Include="..\..\..\..\htdocs\hologram\preview\dataupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\preview\list.php" />
+    <None Include="..\..\..\..\htdocs\hologram\res\manlang.json" />
+    <None Include="..\..\..\..\htdocs\hologram\subadmininfoman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subadmininfoupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subappadd.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subappaddform.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subappman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subbackupremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subcategadd.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subcategman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subcategremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subcategupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subconfigureman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subconfigureupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subhologramman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subhologrampoweron.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subhologramrebooting.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subhologramremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subhologramupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemadd.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemaddform.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemattradd.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemattrman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemattrremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemattrupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subitemupdateform.php" />
+    <None Include="..\..\..\..\htdocs\hologram\sublangman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\sublangupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\sublogman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\sublogremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingdayofweekman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingdayofweekupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingtimeman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingtimeupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseadd.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseexecute.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseman.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseremove.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseupdate.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subrestore.php" />
+    <None Include="..\..\..\..\htdocs\hologram\subrestoreman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\appaliveregister.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\appupdatequery.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\commtest.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\configure.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\configurequery.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\dataupdatequery.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\logregister.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\pcrebootingquery.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\pcshutdowntimequery.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\cli\rankingdataupdatequery.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\common\backup.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\brand.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\db.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\common\env.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\file.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\foodmenu.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\gourmetslide.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\mainslide.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\common\onlygalleria.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\common\shoppinginfo.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\tastychart.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\wol.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\copyright.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\css\mainpage.css" />
+    <None Include="..\..\..\..\htdocs\kiosk\css\subpage.css" />
+    <None Include="..\..\..\..\htdocs\kiosk\GalleriaKiosk.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\index.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\js\menu.js" />
+    <None Include="..\..\..\..\htdocs\kiosk\js\selectsync.js" />
+    <None Include="..\..\..\..\htdocs\kiosk\js\swfobject.js" />
+    <None Include="..\..\..\..\htdocs\kiosk\js\update.js" />
+    <None Include="..\..\..\..\htdocs\kiosk\login.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\mainman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\mainmanadm.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\mainmansch.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\mainmansvc.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\maintenance\backup.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\maintenance\poweronall.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\maintenance\rankingget.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\menu.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\pages.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\brand.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\configure.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\dataupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\foodmenu.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\gourmet_slide.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\main_slide.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\only_galleria.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\ranking.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\shopping_info.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\preview\tasty_chart.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\video.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subadmininfoman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subadmininfoupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subappadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subappaddform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subappman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subbackupremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subcategadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subcategman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subcategremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subcategupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subconfigureman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subconfigureupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuaddform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuupdateform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemaddform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattradd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattrman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattrremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattrupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subitemupdateform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskpoweron.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskrebooting.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\sublangman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\sublangupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\sublogman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\sublogremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaadd.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaaddform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaupdateform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingdayofweekman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingdayofweekupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingtimeman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingtimeupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subrankingdbman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subrankingdbupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseexecute.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseremove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subrestore.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subrestoreman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoadd.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoaddform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginforemove.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfosequpdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoupdate.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoupdateform.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subtastychartman.php" />
+    <None Include="..\..\..\..\htdocs\kiosk\subtastychartupdate.php" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1556BBD3-B85F-44CC-A9E1-6671F62B8F67}</ProjectGuid>
+    <RootNamespace>web</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

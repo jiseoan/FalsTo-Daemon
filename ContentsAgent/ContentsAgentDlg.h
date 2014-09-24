@@ -60,6 +60,8 @@ protected:
 	CString m_sRanking;
 	CString m_sAliveText;
 	time_t m_tAlive;
+	CFile m_LogFile;
+	BOOL m_bWriteLogFile;
 
 // 구현입니다.
 protected:
@@ -114,9 +116,7 @@ protected:
 	BOOL RebootingQuery(BOOL& bReboot);
 	BOOL AliveTest();
 	void AliveSend();
-#ifdef _DEBUG_FILELOG
-	void WriteFileLog(LPCTSTR pLog);
-#endif
+	void WriteFileLog(LPCTSTR pFormat, ...);
 
 public:
 	void OnThreadWorkProc();

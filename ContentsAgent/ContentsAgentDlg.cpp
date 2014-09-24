@@ -17,7 +17,7 @@
 
 #define new DEBUG_NEW
 //#define _HTTP_TEST
-//#define _NO_APP_EXEC
+#define _NO_APP_EXEC
 #define _NO_PC_SHUTDOWN
 #define _QUERY_INTERVAL_DATA		15	// 초
 #define _QUERY_INTERVAL_ALIVE		5	// 초
@@ -126,6 +126,18 @@ CContentsAgentDlg::CContentsAgentDlg(CWnd* pParent /*=NULL*/)
 	m_sLocalIP = _T("");
 	m_sRanking = _T("");
 	m_sAliveText = _T("");
+
+	// 디버깅용 로그파일
+	CString sDir;
+	sDir.Format(_T("%s\\aglog"), _VIEWER_APP_HOME);
+	::CreateDirectory(sDir, NULL);
+
+	SYSTEMTIME st;
+	GetLocalTime(&st);
+
+	CString s;
+	s.Format(_T("%s\\aglog_%02d%02d_%02d%02d%02d.txt"), sDir, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond);
+	m_bWriteLogFile = m_LogFile.Open(s, CFile::modeCreate | CFile::modeWrite, NULL);
 }
 
 CContentsAgentDlg::~CContentsAgentDlg()
@@ -138,6 +150,11 @@ CContentsAgentDlg::~CContentsAgentDlg()
 			delete m_Thrd[i].pEvent;
 			delete m_Thrd[i].pThread;
 		}
+	}
+
+	if (m_bWriteLogFile)
+	{
+		m_LogFile.Close();
 	}
 }
 
@@ -760,10 +777,22 @@ BOOL CContentsAgentDlg::Upzip(LPCTSTR pSrc, LPCTSTR pDst)
 	}
 
 	BOOL bOK = TRUE;
+	TCHAR buf[1024];
 
-	for (int i = 0, n = zip.GetCount() ; bOK && i < n ; i++)
+	for (int i = 0, n = zip.GetCount(); bOK && i < n; i++)
 	{
-		bOK = zip.ExtractFile(i, pDst);
+		TRY
+		{
+			bOK = zip.ExtractFile(i, pDst);
+		}
+		CATCH(CException, pEx)
+		{
+			pEx->GetErrorMessage(buf, 1023);
+			::OutputDebugString(buf);
+			Sleep(100);
+			--i;
+		}
+		END_CATCH
 	}
 
 	zip.Close();
@@ -863,6 +892,8 @@ BOOL CContentsAgentDlg::Download(LPCTSTR pSrc, LPCTSTR pDst)
 
 LPTSTR CContentsAgentDlg::HttpPost(LPCWSTR pSrvIP, LPCWSTR pPath, LPCWSTR pParam2, int& nRecv)
 {
+	WriteFileLog(_T("HttpPost...0\r\n"));
+
 	HINTERNET hSession = WinHttpOpen(L"Data Agent/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
 	if (!hSession)
 	{
@@ -968,6 +999,8 @@ LPTSTR CContentsAgentDlg::HttpPost(LPCWSTR pSrvIP, LPCWSTR pPath, LPCWSTR pParam
 	WinHttpCloseHandle(hConnect);
 	WinHttpCloseHandle(hSession);
 
+	WriteFileLog(_T("HttpPost...1\r\n"));
+
 	LPTSTR pT = NULL;
 	if (pRcv)
 	{
@@ -985,6 +1018,8 @@ LPTSTR CContentsAgentDlg::HttpPost(LPCWSTR pSrvIP, LPCWSTR pPath, LPCWSTR pParam
 			memmove(&pT[0], &pT[1], sizeof(TCHAR) * nRecv--);
 		}
 	}
+
+	WriteFileLog(_T("HttpPost...2(%d)\r\n"), nRecv);
 
 	return pT;
 }
@@ -1343,6 +1378,26 @@ void CContentsAgentDlg::LogWrite(LPCTSTR pMsg)
 			pEdit->SetWindowText(s);
 			pEdit->LineScroll(pEdit->GetLineCount());
 		}
+
+		WriteFileLog(_T("\r\n%s"), pMsg);
+	}
+}
+
+void CContentsAgentDlg::WriteFileLog(LPCTSTR pFormat, ...)
+{
+	if (m_bWriteLogFile)
+	{
+		TCHAR buf[2049];
+		va_list args;
+
+		va_start(args, pFormat);
+		_vsntprintf_s(buf, 2048, pFormat, args);
+		va_end(args);
+
+		char buf2[2049];
+		int n = WideCharToMultiByte(CP_ACP, 0, buf, -1, buf2, 2049, NULL, NULL);
+
+		m_LogFile.Write(buf2, n);
 	}
 }
 
@@ -1507,8 +1562,11 @@ BOOL CContentsAgentDlg::AppUpdate(BOOL bExec)
 	BOOL bUpdate;
 	CString s, sReleaseNo, sZip, sLog, sName, sPath;
 
+	WriteFileLog(_T("AppUpdate...0\r\n"));
+
 	if (AppUpdateQuery(bUpdate, sReleaseNo, sZip) && bUpdate && sReleaseNo.CompareNoCase(m_sAppReleaseNo) != 0)
 	{
+		WriteFileLog(_T("AppUpdate...1\r\n"));
 		// 다운로드 unzip
 		sName = sZip.Right(sZip.GetLength() - sZip.ReverseFind('/') - 1);
 		s.Format(_T("%s\\%s"), m_sAppHome, sName);
@@ -1521,9 +1579,11 @@ BOOL CContentsAgentDlg::AppUpdate(BOOL bExec)
 			// App 종료
 			AppClose();
 			LogRegister(3, 2, NULL);
-			Sleep(100);
+			Sleep(150);
 			Upzip(s, m_sAppHome);
 			_flushall();
+			Sleep(150);
+			WriteFileLog(_T("AppUpdate...2\r\n"));
 			::DeleteFile(s);
 
 			m_sAppReleaseNo = sReleaseNo;
@@ -1537,6 +1597,7 @@ BOOL CContentsAgentDlg::AppUpdate(BOOL bExec)
 				ShellExecute(NULL, _T("open"), s, NULL, m_sAppHome, SW_SHOW);
 #endif
 			}
+			WriteFileLog(_T("AppUpdate...3\r\n"));
 
 			return TRUE;
 		}
@@ -1553,8 +1614,10 @@ BOOL CContentsAgentDlg::DataUpdate()
 	BOOL bUpdate;
 	CString s, sReleaseNo, sZip, sLog, sName, sPath;
 
+	WriteFileLog(_T("DataUpdate...0\r\n"));
 	if (DataUpdateQuery(bUpdate, sReleaseNo, sZip) && bUpdate && sReleaseNo.CompareNoCase(m_sContentsReleaseNo) != 0)
 	{
+		WriteFileLog(_T("DataUpdate...1\r\n"));
 		// 다운로드 unzip
 		sName = sZip.Right(sZip.GetLength() - sZip.ReverseFind('/') - 1);
 		s.Format(_T("%s\\%s"), m_sAppHome, sName);
@@ -1564,9 +1627,11 @@ BOOL CContentsAgentDlg::DataUpdate()
 			sLog.Format(_T("data-release-no.:%s, OK"), sReleaseNo);
 			LogRegister(4, 1, sLog);
 
-			Sleep(100);
+			Sleep(150);
 			Upzip(s, m_sAppHome);
 			_flushall();
+			Sleep(150);
+			WriteFileLog(_T("DataUpdate...2\r\n"));
 			::DeleteFile(s);
 
 			m_sContentsReleaseNo = sReleaseNo;
@@ -1598,8 +1663,10 @@ BOOL CContentsAgentDlg::RankingUpdate()
 	BOOL bUpdate;
 	CString s, sReleaseNo, sJson, sLog, sName, sPath;
 
+	WriteFileLog(_T("RankingUpdate...0\r\n"));
 	if (RankingUpdateQuery(bUpdate, sReleaseNo, sJson) && bUpdate && sReleaseNo.CompareNoCase(m_sRanking) != 0)
 	{
+		WriteFileLog(_T("RankingUpdate...1\r\n"));
 		// 다운로드 json
 		sName = sJson.Right(sJson.GetLength() - sJson.ReverseFind('/') - 1);
 		s.Format(_T("%s\\%s\\%s"), m_sAppHome, _CONF_FOLDER, sName);
@@ -1778,18 +1845,6 @@ BOOL CContentsAgentDlg::AliveTest()
 
 	return FALSE;
 }
-
-#ifdef _DEBUG_FILELOG
-void CContentsAgentDlg::WriteFileLog(LPCTSTR pLog)
-{
-	CStdioFile f;
-	f.Open(L"d:\\dalog.txt", CFile::modeCreate|CFile::modeNoTruncate|CFile::modeWrite, NULL, NULL);
-	f.SeekToEnd();
-	f.Write(pLog, _tcslen(pLog) * sizeof(TCHAR));
-	f.Flush();
-	f.Close();
-}
-#endif
 
 
 void CContentsAgentDlg::OnTimer(UINT_PTR nIDEvent)

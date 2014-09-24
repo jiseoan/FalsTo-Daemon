@@ -1,4 +1,0 @@
-FalsTo-Daemon
-=============
-
-FalsTo-Daemon

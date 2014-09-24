@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk">
+      <UniqueIdentifier>{5230064e-3cd7-44e7-bbfe-b73e550b4342}</UniqueIdentifier>
+      <Extensions>html;php;css;js;json;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk\cli">
+      <UniqueIdentifier>{f8a261a8-146f-4adc-86df-44a8d0beb011}</UniqueIdentifier>
+      <Extensions>php;html;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk\css">
+      <UniqueIdentifier>{cc36fd39-1a18-4c03-b942-a17121071142}</UniqueIdentifier>
+      <Extensions>css;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk\javascript">
+      <UniqueIdentifier>{628d2ab2-a304-405d-b1e6-8a15be4f51c3}</UniqueIdentifier>
+      <Extensions>js;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk\maintenance">
+      <UniqueIdentifier>{8a2a62da-0815-40d2-a205-43d869c4aa7c}</UniqueIdentifier>
+      <Extensions>php;json;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk\preview">
+      <UniqueIdentifier>{b4423d2a-dce8-4835-a55b-5e9b017ef417}</UniqueIdentifier>
+      <Extensions>php;html;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\kiosk\common">
+      <UniqueIdentifier>{6ed4e5d6-d777-48a8-8a32-e20e694ddfbc}</UniqueIdentifier>
+      <Extensions>php;json;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram">
+      <UniqueIdentifier>{49a41f2a-6adf-4441-878d-5fd3cbcdefa3}</UniqueIdentifier>
+      <Extensions>html;php;css;js;json;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram\preview">
+      <UniqueIdentifier>{abad08ff-0f1e-44c7-a2c0-50e6ef98f7ee}</UniqueIdentifier>
+      <Extensions>php;html;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram\cli">
+      <UniqueIdentifier>{69491ef9-6266-4215-ad78-dd27082a0425}</UniqueIdentifier>
+      <Extensions>php;html;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram\javascript">
+      <UniqueIdentifier>{2aa60de9-a2c6-468a-b10e-8eec72bae334}</UniqueIdentifier>
+      <Extensions>js;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram\css">
+      <UniqueIdentifier>{43509151-c48e-4c46-9f13-984644156763}</UniqueIdentifier>
+      <Extensions>css;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram\maintenance">
+      <UniqueIdentifier>{fb917b20-cdce-4ff7-80a9-1ec7dee63083}</UniqueIdentifier>
+      <Extensions>php;json;</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\hologram\common">
+      <UniqueIdentifier>{4cca8efc-f21b-4e22-a303-0e66c535207a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\hologram\res">
+      <UniqueIdentifier>{0d126ac1-c65d-4007-a234-dfc48609295d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\htdocs\hologram\cli\appaliveregister.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\appupdatequery.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\commtest.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\configure.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\configurequery.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\dataupdatequery.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\logregister.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\pcrebootingquery.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\cli\pcshutdowntimequery.php">
+      <Filter>소스 파일\hologram\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\backup.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\db.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\env.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\file.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\list.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\manlang.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\common\wol.php">
+      <Filter>소스 파일\hologram\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\css\mainpage.css">
+      <Filter>소스 파일\hologram\css</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\css\subpage.css">
+      <Filter>소스 파일\hologram\css</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\js\menu.js">
+      <Filter>소스 파일\hologram\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\js\selectsync.js">
+      <Filter>소스 파일\hologram\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\js\update.js">
+      <Filter>소스 파일\hologram\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\maintenance\backup.php">
+      <Filter>소스 파일\hologram\maintenance</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\maintenance\poweronall.php">
+      <Filter>소스 파일\hologram\maintenance</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\preview\configure.php">
+      <Filter>소스 파일\hologram\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\preview\dataupdate.php">
+      <Filter>소스 파일\hologram\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\preview\list.php">
+      <Filter>소스 파일\hologram\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\res\manlang.json">
+      <Filter>소스 파일\hologram\res</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\copyright.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\index.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\login.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\mainman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\mainmanadm.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\mainmansch.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\mainmansvc.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\menu.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\pages.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subadmininfoman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subadmininfoupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subappadd.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subappaddform.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subappman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subbackupremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subcategadd.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subcategman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subcategremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subcategupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subconfigureman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subconfigureupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subhologramman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subhologrampoweron.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subhologramrebooting.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subhologramremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subhologramupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemadd.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemaddform.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemattradd.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemattrman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemattrremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemattrupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subitemupdateform.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\sublangman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\sublangupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\sublogman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\sublogremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingdayofweekman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingdayofweekupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingtimeman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\suboperatingtimeupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseadd.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseexecute.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseremove.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subreleaseupdate.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subrestore.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\hologram\subrestoreman.php">
+      <Filter>소스 파일\hologram</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\appaliveregister.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\appupdatequery.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\commtest.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\configure.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\configurequery.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\dataupdatequery.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\logregister.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\pcrebootingquery.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\pcshutdowntimequery.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\cli\rankingdataupdatequery.php">
+      <Filter>소스 파일\kiosk\cli</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\backup.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\brand.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\db.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\env.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\file.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\mainslide.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\shoppinginfo.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\wol.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\css\mainpage.css">
+      <Filter>소스 파일\kiosk\css</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\css\subpage.css">
+      <Filter>소스 파일\kiosk\css</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\js\menu.js">
+      <Filter>소스 파일\kiosk\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\js\selectsync.js">
+      <Filter>소스 파일\kiosk\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\js\swfobject.js">
+      <Filter>소스 파일\kiosk\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\js\update.js">
+      <Filter>소스 파일\kiosk\javascript</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\maintenance\backup.php">
+      <Filter>소스 파일\kiosk\maintenance</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\maintenance\poweronall.php">
+      <Filter>소스 파일\kiosk\maintenance</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\maintenance\rankingget.php">
+      <Filter>소스 파일\kiosk\maintenance</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\brand.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\configure.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\dataupdate.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\main_slide.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\ranking.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\shopping_info.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\copyright.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\GalleriaKiosk.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\index.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\login.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\mainman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\mainmanadm.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\mainmansch.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\mainmansvc.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\menu.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\pages.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subadmininfoman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subadmininfoupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subappadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subappaddform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subappman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subbackupremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subcategadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subcategman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subcategremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subcategupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subconfigureman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subconfigureupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subimagesupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemaddform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattradd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattrman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattrremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemattrupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subitemupdateform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskpoweron.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskrebooting.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subkioskupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\sublangman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\sublangupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\sublogman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\sublogremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\submainslideupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingdayofweekman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingdayofweekupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingtimeman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\suboperatingtimeupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subrankingdbman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subrankingdbupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseexecute.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subreleaseupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subrestore.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subrestoreman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoaddform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginforemove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfosequpdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subshoppinginfoupdateform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\gourmet_slide.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\gourmetslide.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subtastychartupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subtastychartman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\tastychart.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\tasty_chart.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaupdateform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subonlygalleriaaddform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\only_galleria.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\onlygalleria.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuremove.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuupdate.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuupdateform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuadd.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuaddform.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\subfoodmenuman.php">
+      <Filter>소스 파일\kiosk</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\common\foodmenu.php">
+      <Filter>소스 파일\kiosk\common</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\foodmenu.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+    <None Include="..\..\..\..\htdocs\kiosk\preview\video.php">
+      <Filter>소스 파일\kiosk\preview</Filter>
+    </None>
+  </ItemGroup>
+</Project>
